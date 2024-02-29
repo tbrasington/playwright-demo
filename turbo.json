@@ -6,6 +6,13 @@
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
+    "start": {
+      "dependsOn": ["^start"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "e2e": {
+      "dependsOn": ["^build"]
+    },
     "lint": {
       "dependsOn": ["^lint"]
     },

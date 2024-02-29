@@ -1,0 +1,17 @@
+{
+  "name": "docs-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "e2e:ui": "playwright test --ui",
+    "dev:test": "playwright test",
+    "e2e": "start-server-and-test  \"(cd ../../apps/docs/ && pnpm run start)\" http://localhost:3001 \"pnpm dev:test\""
+  },
+  "dependencies": {
+    "docs": "workspace:*",
+    "start-server-and-test": "^2.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.41.2"
+  }
+}
